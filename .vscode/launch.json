@@ -16,6 +16,18 @@
             "program": "lib/fit_meet1/tugas1.dart"
         },
         {
+            "name": "fit_meet2",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/fit_meet2/tugas2.dart"
+        },
+        {
+            "name": "fit_meet3",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/fit_meet3/tugas3.dart"
+        },
+        {
             "name": "fic_batch2 (profile mode)",
             "request": "launch",
             "type": "dart",

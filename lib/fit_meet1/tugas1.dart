@@ -9,13 +9,42 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Tugas 1'),
+        appBar: AppBar(
+          title: const Text('Tugas 1'),
+        ),
+        body: const Center(
+          child: ChangeText(),
         ),
       ),
+    );
+  }
+}
+
+class ChangeText extends StatefulWidget {
+  const ChangeText({super.key});
+
+  @override
+  State<ChangeText> createState() => _ChangeTextState();
+}
+
+class _ChangeTextState extends State<ChangeText> {
+  DateTime time = DateTime.now();
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('Text : $time'),
+        ElevatedButton(
+          onPressed: () {
+            time = DateTime.now();
+            setState(() {});
+          },
+          child: const Text('Update'),
+        ),
+      ],
     );
   }
 }
